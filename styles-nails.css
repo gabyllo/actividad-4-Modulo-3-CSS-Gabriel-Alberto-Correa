@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box ;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, rgb(208, 101, 208), rgb(177, 175, 177));
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around
+}
+.tipos-uñas {
+    text-align: center;
+    background-color: rgba(163, 87, 199, 0.8);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 80%;
+    animation: caer 4s forwards;
+    color: black;
+    transition: color 0.1s, text-shadow 0.1s;
+}
+@keyframes caer {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.logo1{
+    float:left;
+    justify-content: center;
+    height: auto;
+    border-radius: 99%;
+    position: relative;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+    box-sizing: content-box;
+    display: flex;
+}    
+.logo1:hover {
+    transform: rotate(360deg); 
+    animation-iteration-count: infinite; 
+    
+
+}
+.horarios{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s ease;
+    transform-style: preserve-3d;
+    
+}
+.horario:hover {
+    transform: rotateX(45deg) rotateY(45deg);
+}
+@keyframes subir {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
